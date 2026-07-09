@@ -2,8 +2,8 @@ import uuid
 import logging
 import httpx
 from typing import Dict, Any, List
-from .sqlite_store import SQLiteStore
-from ...config.settings import settings
+from backend.core.memory.sqlite_store import SQLiteStore
+from backend.config.settings import settings
 
 logger = logging.getLogger(__name__)
 

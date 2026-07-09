@@ -1,19 +1,19 @@
 import asyncio
 from fastapi import FastAPI
-from .api import health, chat
+from backend.api import health, chat
 import logging
-from .config.settings import settings
+from backend.config.settings import settings
 
-from .core.memory.sqlite_store import SQLiteStore
-from .core.memory.chroma_store import ChromaStore
-from .core.memory.embedding_provider import OllamaEmbeddingProvider
-from .core.memory.extractor import MemoryExtractor
-from .core.memory.queue import MemoryQueue
-from .core.memory.cleanup import MemoryCleanup
-from .core.memory.search_api import MemorySearchAPI
-from .core.memory.conversation_manager import ConversationManager
-from .core.memory.manager import MemoryManager
-from .core.rag.retriever import Retriever
+from backend.core.memory.sqlite_store import SQLiteStore
+from backend.core.memory.chroma_store import ChromaStore
+from backend.core.memory.embedding_provider import OllamaEmbeddingProvider
+from backend.core.memory.extractor import MemoryExtractor
+from backend.core.memory.queue import MemoryQueue
+from backend.core.memory.cleanup import MemoryCleanup
+from backend.core.memory.search_api import MemorySearchAPI
+from backend.core.memory.conversation_manager import ConversationManager
+from backend.core.memory.manager import MemoryManager
+from backend.core.rag.retriever import Retriever
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

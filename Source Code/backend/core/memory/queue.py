@@ -1,9 +1,9 @@
 import asyncio
 import logging
 from typing import Dict, Any
-from .embedding_provider import EmbeddingProvider
-from .chroma_store import ChromaStore
-from ...config.settings import settings
+from backend.core.memory.embedding_provider import EmbeddingProvider
+from backend.core.memory.chroma_store import ChromaStore
+from backend.config.settings import settings
 
 logger = logging.getLogger(__name__)
 

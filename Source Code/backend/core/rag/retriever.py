@@ -1,7 +1,7 @@
 from typing import List, Dict, Any
 import logging
-from ..memory.search_api import MemorySearchAPI
-from ...config.settings import settings
+from backend.core.memory.search_api import MemorySearchAPI
+from backend.config.settings import settings
 
 logger = logging.getLogger(__name__)
 

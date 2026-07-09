@@ -2,7 +2,7 @@ import chromadb
 from chromadb.config import Settings as ChromaSettings
 from typing import List, Dict, Any
 import logging
-from ...config.settings import settings
+from backend.config.settings import settings
 
 logger = logging.getLogger(__name__)
 

@@ -1,12 +1,12 @@
 import logging
 import uuid
 from typing import List, Dict, Any
-from .sqlite_store import SQLiteStore
-from .chroma_store import ChromaStore
-from .embedding_provider import EmbeddingProvider
-from .extractor import MemoryExtractor
-from .queue import MemoryQueue
-from ..rag.retriever import Retriever
+from backend.core.memory.sqlite_store import SQLiteStore
+from backend.core.memory.chroma_store import ChromaStore
+from backend.core.memory.embedding_provider import EmbeddingProvider
+from backend.core.memory.extractor import MemoryExtractor
+from backend.core.memory.queue import MemoryQueue
+from backend.core.rag.retriever import Retriever
 
 logger = logging.getLogger(__name__)
 

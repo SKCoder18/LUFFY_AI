@@ -5,8 +5,8 @@ import httpx
 from fastapi import APIRouter, BackgroundTasks, Request
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
-from ..core.rag.prompt_builder import PromptBuilder
-from ..config.settings import settings
+from backend.core.rag.prompt_builder import PromptBuilder
+from backend.config.settings import settings
 
 logger = logging.getLogger(__name__)
 router = APIRouter()

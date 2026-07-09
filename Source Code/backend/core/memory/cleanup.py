@@ -1,7 +1,7 @@
 import logging
 import asyncio
-from .sqlite_store import SQLiteStore
-from .chroma_store import ChromaStore
+from backend.core.memory.sqlite_store import SQLiteStore
+from backend.core.memory.chroma_store import ChromaStore
 
 logger = logging.getLogger(__name__)
 

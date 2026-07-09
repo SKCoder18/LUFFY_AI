@@ -1,7 +1,7 @@
 from typing import List, Dict, Any
-from .chroma_store import ChromaStore
-from .sqlite_store import SQLiteStore
-from .embedding_provider import EmbeddingProvider
+from backend.core.memory.chroma_store import ChromaStore
+from backend.core.memory.sqlite_store import SQLiteStore
+from backend.core.memory.embedding_provider import EmbeddingProvider
 
 class MemorySearchAPI:
     def __init__(self, chroma: ChromaStore, sqlite: SQLiteStore, embedder: EmbeddingProvider):
